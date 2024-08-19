@@ -1,0 +1,166 @@
+%==============================================================================
+% Paper Research Methods: onderzoeksvoorstel
+%==============================================================================
+
+\documentclass{hogent-article}
+
+\usepackage{lipsum} % Voor vultekst
+
+% Invoegen bibliografiebestand
+\addbibresource{references.bib}
+
+% Informatie over de opleiding, het vak en soort opdracht
+\studyprogramme{Professionele bachelor toegepaste informatica}
+\course{Research Methods}
+\assignmenttype{Paper: Onderzoeksvoorstel}
+\academicyear{2023-2024}
+
+% TODO (fase 1): Werktitel
+\title{Hoe beïnvloedt het gebruik van AI-gedreven drones voor onkruidbestrijding in Belgische aardappelvelden de efficiëntie van herbicidegebruik en de behoefte aan menselijke arbeid in de teeltcyclus?}
+
+% TODO (fase 1): Studentnaam en emailadres invullen
+\author{ Kenzo Vermaeren}
+\email{kenzo.vermaeren@student.hogent.be}
+
+% TODO (fase 1): Medestudent
+% Schrijf je het voorstel in samenwerking met een medestudent? Geef dan de naam
+% en emailadres hier. Als je het voorstel alleen schrijft, verwijder dan deze
+% regels of zet ze in commentaar.
+%\author{Yasmine Alaoui}
+%\email{yasmine.alaoui@student.hogent.be}
+
+% TODO (fase 1): Geef hier de link naar jullie Github-repository
+\projectrepo{https://github.com/KenzoVermaeren/RM_KenzoVermaeren.git}
+
+% Binnen welke specialisatierichting uit 3TI situeert dit onderzoek zich?
+% Kies uit deze lijst:
+%
+% - Mobile \& Enterprise development
+% - AI \& Data Engineering
+% - Functional \& Business Analysis
+% - System \& Network Administrator
+% - Mainframe Expert
+% - Als het onderzoek niet past binnen een van deze domeinen specifieer je deze
+%   zelf
+%
+\specialisation{AI en data engineering }
+% Geef hier enkele sleutelwoorden die je onderwerp beschrijven
+\keywords{Agricultuur, UAV, image/video recognitiën}
+
+\begin{document}
+
+\begin{abstract}
+ Dit onderzoek richt zich specifiek op de inzet van AI-gedreven drones voor onkruidbestrijding in Belgische aardappelvelden, met een focus op het verbeteren van de efficiëntie van herbicidegebruik en het verminderen van de afhankelijkheid van menselijke arbeid. Het onderzoek is gemotiveerd door de toenemende behoefte aan innovatieve, kostenbesparende oplossingen binnen de landbouwsector, waar traditionele methoden steeds minder effectief blijken in vergelijking met geavanceerde technologieën. Gezien de dalende beschikbaarheid van arbeidskrachten in de landbouw, wordt er in dit onderzoek onderzocht hoe AI-gedreven drones kunnen bijdragen aan het optimaliseren van de onkruidbestrijding, het minimaliseren van herbicidegebruik en het verlichten van de werklast voor boeren.
+
+De onderzoeksmethode omvat een uitgebreide literatuurstudie en een analyse van gegevens afkomstig van vergelijkbare technologieën en sectoren. Het doel is om een diepgaand inzicht te verkrijgen in de huidige stand van zaken rondom het gebruik van drones voor onkruidbestrijding, en om aanbevelingen te doen voor verdere optimalisatie en implementatie binnen de aardappelteelt. De verwachte resultaten zullen een duidelijk beeld geven van de voordelen en beperkingen van AI-gedreven drones in dit specifieke agrarische gebruik.
+
+\end{abstract}
+
+\tableofcontents
+
+\bigskip
+
+% TODO: EP3
+%
+% Als je dit voorstel indient in EP3, haal de tekst hieronder uit
+% commentaar en pas aan voor jouw situatie.
+%
+%\paragraph{Opmerking: verbeteringen t.o.v.\ origineel voorstel}
+%
+% Beschrijf hier kort de verschillen en/of verbeteringen t.o.v. je originele
+% voorstel.
+
+% TODO: Bachelorproef
+% 
+% Neem je dit jaar ook de bachelorproef op? Haal dan de tekst hieronder
+% uit commentaar en pas aan voor jouw situatie.
+%
+%\paragraph{Opmerking}
+%
+% Ik neem dit jaar ook de bachelorproef op. De inhoud van dit onderzoeksvoorstel dient ook als het onderwerpvoor mijn bachelorproef. Mijn promotor is (Mr./Mevr.) X.\ Familienaam.
+%
+% Beschrijf de eventuele verschillen en/of verbeteringen in dit document t.o.v.\ jouw onderzoeksvoorstel dat je ingediend hebt voor de bachelorproef.
+
+\section{Inleiding}%
+\label{sec:inleiding}
+
+% TODO: (fase 1 - onderzoeksvraag formuleren)
+De moderne landbouwsector staat voor grote uitdagingen: lange werkdagen, zwaar fysiek werk en toenemende druk door strengere regelgeving. Om deze uitdagingen tegen te gaan, is er behoefte aan innovatieve oplossingen die de efficiëntie verhogen en zorgen voor een verminderde werklast. Een van de meest veelbelovende innovaties is het gebruik van AI-gedreven drones, specifiek voor taken zoals onkruidbestrijding. Deze drones hebben het potentieel om de landbouw fundamenteel te transformeren door de precisie en effectiviteit van gewasbeheer te verbeteren. Dit onderzoek richt zich op een diepgaande analyse van de efficiëntie van AI-gedreven drones in Belgische aardappelvelden, met een speciale focus op het verminderen van herbicidegebruik en het verlichten van de behoefte aan menselijke arbeid. Door middel van een uitgebreide literatuurstudie en inzichten van professionals uit vergelijkbare sectoren, streven we naar een gedetailleerd begrip van hoe deze technologie kan bijdragen aan duurzamere en efficiëntere landbouwpraktijken. Het doel is om concrete aanbevelingen te doen voor de optimalisatie van onkruidbestrijding met drones, terwijl we ook de bredere impact van deze technologie op de landbouwsector in kaart brengen. Deze inleiding legt de basis voor een onderzoek dat innovatie koppelt aan praktische toepassingen, met oog voor de toekomstige ontwikkelingen in de landbouw.
+
+
+\section{Literatuurstudie}%
+\label{sec:literatuurstudie}
+
+% TODO: (fase 3, 4 - literatuurstudie)
+De afgelopen jaren heeft de technologie van Unmanned Aerial Vehicles (UAV's), of onbemande luchtvaartuigen, aanzienlijke vooruitgang geboekt, met name in de precisielandbouw. UAV's worden steeds geavanceerder en hebben een breed scala aan toepassingen, vooral op het gebied van onkruidbestrijding. Deze drones zijn uitgerust met diverse sensoren en camera’s die gegevens verzamelen over gewascondities en bodemomstandigheden \autocite{istiak2023adoption,hunt2018good}. Deze gegevens zijn cruciaal voor het verbeteren van landbouwtechnieken en het optimaliseren van hulpbronnen.
+
+Een opmerkelijke ontwikkeling in het gebruik van UAV's is de toepassing van Structure-from-Motion (SfM) fotogrammetrie. Deze technologie maakt het mogelijk om de hoogte en de driedimensionale structuur van planten nauwkeurig te schatten. SfM genereert gedetailleerde puntenwolken die de groei en structuur van gewassen in kaart brengen. Voor onkruidbestrijding betekent dit dat landbouwprofessionals precies kunnen bepalen waar onkruid zich bevindt ten opzichte van de gewassen. Door het gedetailleerd vastleggen van de plantstructuren kunnen UAV’s effectief onkruid identificeren en onderscheiden van gewassen, wat leidt tot gerichte en efficiënte onkruidbestrijding \autocite{liu2021boost}.
+
+Een andere cruciale toepassing van UAV's in onkruidbestrijding is hun vermogen om veranderingen in gewasbedekking te monitoren die kunnen wijzen op de aanwezigheid van onkruid. Drones uitgerust met geavanceerde sensoren kunnen fysieke en chemische veranderingen detecteren die door onkruid worden veroorzaakt, zoals afwijkingen in plantengroei en variaties in vegetatieve dichtheid. Door deze veranderingen te analyseren, kunnen UAV’s onkruid in een vroeg stadium identificeren en classificeren. Dit maakt het mogelijk om gerichte behandelingen toe te passen, zoals het lokaal toedienen van herbiciden, wat resulteert in een verminderd gebruik van chemicaliën en een lagere impact op het milieu \autocite{zhang2021review}.
+
+Daarnaast dragen UAV’s bij aan het monitoren van andere factoren die invloed hebben op de effectiviteit van onkruidbestrijding, zoals vocht- en zoutgehalte in de bodem. Via remote sensing kunnen deze variabelen gemeten worden, wat waardevolle informatie oplevert voor het optimaliseren van behandelingsstrategieën en het voorkomen van onkruidproblemen \autocite{hunt2018good}.
+
+Door deze technologische vooruitgangen kunnen UAV’s een belangrijke rol spelen in het verbeteren van precisielandbouwtechnieken, met als doel een efficiëntere en milieuvriendelijkere aanpak van onkruidbestrijding te realiseren.
+
+
+
+
+% \autocite{BIBTEXKEY} => (Auteur, jaartal): voor een referentie tussen
+% haakjes, waar de auteursnaam GEEN onderdeel is van een zin.
+% \textcite{BIBTEXKEY} => Auteur (jaartal): voor een narratieve referentie,
+% waar de naam van de auteur effectief een onderdeel is van de zin.
+
+\section{Methodologie}%
+\label{sec:methodologie}
+
+Het project om AI-gedreven drones voor onkruidbestrijding te ontwikkelen en evalueren bestaat uit 4 geplande fasen, elk met specifieke stappen om de uiteindelijke doelstellingen te bereiken.
+
+In de eerste fase richten we ons op het verzamelen van de nodige achtergrondinformatie en het voorbereiden van de basis voor verdere ontwikkeling. We beginnen met een uitgebreid literatuuronderzoek om bestaande technologieën en benaderingen voor onkruidbestrijding met drones te verkennen. Dit omvat het analyseren van wetenschappelijke artikelen over AI-gedreven drones en precisielandbouwtechnieken. Ook worden er bestaande datasets en relevante onderzoeksresultaten verzameld die kunnen bijdragen aan de ontwikkeling van ons systeem. We stellen ook een lijst op van de beschikbare tools, frameworks en technologieën die nuttig kunnen zijn voor de verdere ontwikkeling van de drones.
+
+De tweede fase concentreert zich op de modelontwikkeling en training. De datasets worden opgeschoond, gebalanceerd en genormaliseerd en bereiden we ze voor door middel van augmentatie-technieken om de variatie en omvang te vergroten \autocite{deutsch2020anomaly}. Vervolgens trainen we verschillende AI-modellen met behulp van de voorbereide datasets en experimenteren we met verschillende algoritmen en parameters om de beste prestaties te behalen. Na de training evalueren we de modellen op basis van nauwkeurigheid, precisie, recall en andere relevante prestatienormen, en vergelijken we de resultaten om het meest effectieve model te selecteren.
+
+In de derde fase leggen we de nadruk op de optimalisatie en verfijning van het geselecteerde model. We optimaliseren de parameters van het model om de prestaties verder te verbeteren door gebruik te maken van technieken zoals grid search of random search \autocite{hestisholihah2023hyperparameter}. Vervolgens voeren we uitgebreide validatie uit, waaronder cross-validatie, om ervoor te zorgen dat het model robuust en goed generaliseerbaar is. Tijdens deze fase verzamelen we ook feedback van experts en stakeholders om verdere verfijningen door te voeren en voeren we iteratieve verbeteringen uit op basis van deze feedback. 
+
+In de laatste fase worden de conclusies gebundeld en wordt bepaald of het model geschikt is voor gebruik. Resultaten worden vergeleken met de vooropgestelde doelstellingen en mogelijkse tekortkomingen worden geïdentificeerd. Indien het model geschikt blijkt, wordt een plan voor verdere implementatie ontwikkeld. Deze fase evalueert de geschiktheid van het model en de mogelijkheid om het in praktische toepassingen te integreren.
+
+De vierde en laatste fase richt zich op de implementatie en evaluatie van het model in een praktische setting. We implementeren het geoptimaliseerde model in een gecontroleerde veldtestomgeving om de praktische prestaties te evalueren. Tijdens de veldtesten monitoren we de effectiviteit van de drone bij onkruidbestrijding en verzamelen we gegevens over de resultaten. We vergelijken deze resultaten met de vooropgestelde doelstellingen om te beoordelen of het model voldoet aan de verwachtingen en eisen. De conclusies worden gebundeld en er wordt bepaald of het model geschikt is voor gebruik.
+
+% Snippet voor een afbeelding dat je bv kan gebruiken voor een Gantt-diagram.
+%
+% We gebruiken hier de figure*-omgeving zodat de figuur over beide kolommen
+% gespreid wordt voor betere leesbaarheid. Probeer de positionering van
+% figuren niet te manipuleren (met bv [ht!]), maar zorg altijd voor een
+% zinvol bijschrift en label, en refereer er naar in de tekst.
+%
+% Bij afbeeldingen die je overneemt, sluit je het bijschrift af met een
+% bronvermelding (commando \autocite).
+%
+% \begin{figure*}
+%   \centering
+%   \includegraphics[width=\textwidth]{example-image-16x9}
+%   \caption{\label{fig:gantt}Gantt diagram met de verschillende fasen en milestones van het onderzoek.}
+% \end{figure*}
+
+\section{Verwachte resultaten}%
+\label{sec:verwachte-resultaten}
+
+% TODO: (fase 6 - afwerking)
+
+Het verwachte resultaat van dit project is een gebruiksvriendelijke applicatie voor onkruidbestrijding, gebaseerd op een geavanceerd model dat UAV-gegevens analyseert. De applicatie zal gebruikers in staat stellen om beelden van hun velden te uploaden en automatisch onkruid te identificeren. Dit zal leiden tot gerichte en efficiënte behandelingen, vermindering van herbicidengebruik en lagere kosten. De technologie zal de efficiëntie van onkruidbestrijding verbeteren, de ecologische impact verkleinen en bijdragen aan duurzamer gewasbeheer.
+\section{Discussie, resultaten}%
+\label{sec:Discussie, resultaten}
+
+UAV's en kunstmatige intelligentie hebben opmerkbare voordelen voor de precisielandbouw, vooral bij onkruidbestrijding. Deze technologieën maken het mogelijk om onkruid met meer precisie te identificeren en gerichte behandelingen toe te passen, wat resulteert in een efficiënter gebruik van herbiciden en een verminderde impact op het milieu.
+
+Door de vijf fasen van ontwikkeling en implementatie zorgvuldig te volgen, kunnen we de effectiviteit van deze technologieën aanzienlijk verbeteren. Deze aanpak draagt bij aan een efficiënter systeem en vermindert de werkdruk voor landbouwers. Bovendien zal een gebruiksvriendelijke applicatie het eenvoudiger maken om deze technologie in de praktijk te brengen.
+
+%------------------------------------------------------------------------------
+% Referentielijst
+%------------------------------------------------------------------------------
+% TODO: (fase 4) de gerefereerde werken moeten in BibTeX-bestand
+% bibliografie.bib voorkomen. Gebruik JabRef om je bibliografie bij te
+% houden.
+
+\printbibliography[heading=bibintoc]
+
+\end{document}
